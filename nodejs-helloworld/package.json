@@ -14,5 +14,10 @@
   },
   "publishConfig": {
     "registry": "https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/"
-  }
+  },
+  "dependencies": {
+    "express": "4.14.x"
+  },
+  "devDependencies": {}
 }
+
