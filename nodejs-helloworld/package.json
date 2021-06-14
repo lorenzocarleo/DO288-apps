@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-helloworld",
+  "name": "@lorenzo.carleo/nodejs-helloworld",
   "version": "1.0.0",
   "description": "Hello World!",
   "main": "app.js",
@@ -25,5 +25,9 @@
     "serve-static": "1.14.1",
     "vary": "1.1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://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@github.com/lorenzocarleo/DO288-apps/nodejs-helloworld"
+  }
 }
