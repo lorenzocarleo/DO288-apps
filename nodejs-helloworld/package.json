@@ -13,7 +13,7 @@
     "url": "https://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@github.com/lorenzocarleo/DO288-apps/nodejs-helloworld/issues"
   },
   "publishConfig": {
-    "registry": "https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/"
+    "registry": "https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-group/"
   },
   "dependencies": {
     "express": "4.17.1"
