@@ -16,7 +16,13 @@
     "registry": "https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/"
   },
   "dependencies": {
-    "express": "4.17.1"
+    "escape-html": "1.0.3",
+    "express": "4.17.1",
+    "finalhandler": "1.1.2",
+    "methods": "1.1.2",
+    "path-to-regexp": "6.2.0",
+    "serve-static": "1.14.1",
+    "vary": "1.1.2"
   },
   "devDependencies": {}
 }
