@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.17.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/lorenzo/git/DO288-apps/nodejs-helloworld',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/lorenzo/.npm/nodejs-helloworld/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/lorenzo/.npm correctMkdir not in flight; initializing
+10 info lifecycle nodejs-helloworld@1.0.0~prepublish: nodejs-helloworld@1.0.0
+11 silly lifecycle nodejs-helloworld@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/lorenzo/.npm/nodejs-helloworld/1.0.0/package.tgz',
+12 verbose tar pack   '/home/lorenzo/git/DO288-apps/nodejs-helloworld' ]
+13 verbose tarball /home/lorenzo/.npm/nodejs-helloworld/1.0.0/package.tgz
+14 verbose folder /home/lorenzo/git/DO288-apps/nodejs-helloworld
+15 verbose addLocalTarball adding from inside cache /home/lorenzo/.npm/nodejs-helloworld/1.0.0/package.tgz
+16 verbose correctMkdir /home/lorenzo/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd nodejs-helloworld@1.0.0
+18 verbose afterAdd /home/lorenzo/.npm/nodejs-helloworld/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/lorenzo/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/lorenzo/.npm/nodejs-helloworld/1.0.0/package/package.json written
+21 silly publish { name: 'nodejs-helloworld',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Hello World!',
+21 silly publish   main: 'app.js',
+21 silly publish   scripts: { start: 'node app.js' },
+21 silly publish   keywords: [],
+21 silly publish   author: { name: 'lorenzo' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/lorenzocarleo/DO288-apps/nodejs-helloworld/issues' },
+21 silly publish   publishConfig: { registry: 'https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'nodejs-helloworld@1.0.0',
+21 silly publish   _shasum: 'e16f67c2e081ce4916a32b1cb8bb934fc3795922',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig { registry: 'https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/' }
+23 silly mapToRegistry name nodejs-helloworld
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'nodejs-helloworld',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'nodejs-helloworld',
+26 silly mapToRegistry   name: 'nodejs-helloworld',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/nodejs-helloworld
+28 verbose publish registryBase https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/
+29 silly publish uploading /home/lorenzo/.npm/nodejs-helloworld/1.0.0/package.tgz
+30 verbose request uri https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/nodejs-helloworld
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 13:10:04
+33 verbose request using bearer token for auth
+34 verbose request id d10ccead78984e09
+35 http request PUT https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/nodejs-helloworld
+36 http 401 https://nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/nodejs-helloworld
+37 verbose headers { date: 'Mon, 14 Jun 2021 16:14:35 GMT',
+37 verbose headers   server: 'Nexus/3.16.2-01 (OSS)',
+37 verbose headers   'x-content-type-options': 'nosniff',
+37 verbose headers   'www-authenticate': 'BASIC realm="Sonatype Nexus Repository Manager"',
+37 verbose headers   'content-length': '0',
+37 verbose headers   'set-cookie': [ '9657d602ca9f80beeee36e966cab5b2f=13ed532d085a4651c0c53d11b1a3ab9b; path=/; HttpOnly; Secure; SameSite=None' ] }
+38 verbose request invalidating /home/lorenzo/.npm/nexus-nexus3.cp4intpg-wdc04-pa5t4z-8946bbc006b7c6eb0829d088919818bb-0000.us-east.containers.appdomain.cloud/repository/npm-private/nodejs-helloworld on PUT
+39 error publish Failed PUT 401
+40 verbose stack Error: 401 Unauthorized
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:253:9)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules.bundled/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/request/request.js:969:12)
+41 verbose statusCode 401
+42 verbose cwd /home/lorenzo/git/DO288-apps/nodejs-helloworld
+43 error Linux 3.10.0-1160.el7.x86_64
+44 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+45 error node v6.17.1
+46 error npm  v3.10.10
+47 error code E401
+48 error 401 Unauthorized
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
